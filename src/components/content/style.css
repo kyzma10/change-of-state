@@ -1,0 +1,43 @@
+.items {
+    padding: 4rem;
+}
+
+.container {
+    width: 100%;
+}
+
+.control {
+    position: relative;
+    height: 5rem;
+}
+
+.control > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.col-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+.btn {
+    padding: .5rem 3rem;
+    border-radius: 1px;
+    background-color: #4292f4;
+    color: #fff;
+    font-weight: 600;
+}
+
+.active {
+    background-color: #417df4;
+    border: 1px solid #022e93;
+}

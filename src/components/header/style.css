@@ -1,0 +1,21 @@
+.header {
+    height: 7rem;
+    position: relative;
+    border-bottom: 1px solid #d4d5d8;
+}
+
+.logo {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 5rem;
+    width: 4rem;
+    height: 4rem;
+    transform: translate(0, -50%);
+}
+
+.logo > img {
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid #d4d5d8;
+}
