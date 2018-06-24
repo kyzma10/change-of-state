@@ -9,8 +9,7 @@ class Content extends  Component {
         this.state = {
             setElem: true,
             data: [...Data]
-        };
-        this.click = true;
+        }
     }
 
     render() {
@@ -23,7 +22,7 @@ class Content extends  Component {
                             type="button" onClick={() => this.handleClick()}>Click me</button>
                     </div>
                     <div className={this.state.setElem ? 'col-3' : 'col-2'}>
-                        {this.state.data.length>0 ? this.state.data.map(item => (<Item key={item.id} click={this.state.setElem} data={item}/>)) : null}
+                        {this.state.data.length>0 ? this.state.data.map(item => (<Item key={item.id} setElem={this.state.setElem} data={item}/>)) : null}
                     </div>
                 </div>
             </section>

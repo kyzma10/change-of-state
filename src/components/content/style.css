@@ -18,13 +18,17 @@
 }
 
 .col-3 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
 }
 
 .col-2 {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
 }
@@ -35,6 +39,10 @@
     background-color: #4292f4;
     color: #fff;
     font-weight: 600;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .active {
